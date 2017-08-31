@@ -5,6 +5,7 @@ import Wishlist from './wishlist';
 import validation from './common/form-validation';
 import stateCountry from './common/state-country';
 import { classifyForm, Validators, insertStateHiddenField } from './common/form-utils';
+import swal from 'sweetalert2';
 
 export default class Account extends PageManager {
     constructor() {
@@ -105,7 +106,10 @@ export default class Account extends PageManager {
 
             if (!submitForm) {
                 event.preventDefault();
-                alert('Please select one or more items to reorder.');
+                swal({
+                    text: this.context.selectItem,
+                    type: 'error',
+                });
             }
         });
     }
@@ -179,7 +183,10 @@ export default class Account extends PageManager {
                 return true;
             }
 
-            alert(errorMessage);
+            swal({
+                text: errorMessage,
+                type: 'error',
+            });
 
             return event.preventDefault();
         });
@@ -232,7 +239,7 @@ export default class Account extends PageManager {
 
                     cb(result);
                 },
-                errorMessage: 'You must enter your current password.',
+                errorMessage: this.context.currentPassword,
             });
         }
 
@@ -244,7 +251,7 @@ export default class Account extends PageManager {
 
                     cb(result);
                 },
-                errorMessage: 'You must enter a first name.',
+                errorMessage: this.context.firstName,
             },
             {
                 selector: `${formEditSelector} input[name='account_lastname']`,
@@ -253,7 +260,7 @@ export default class Account extends PageManager {
 
                     cb(result);
                 },
-                errorMessage: 'You must enter a last name.',
+                errorMessage: this.context.lastName,
             },
             {
                 selector: `${formEditSelector} input[name='account_phone']`,
@@ -262,7 +269,7 @@ export default class Account extends PageManager {
 
                     cb(result);
                 },
-                errorMessage: 'You must enter a phone number.',
+                errorMessage: this.context.phoneNumber,
             },
         ]);
 
@@ -290,7 +297,7 @@ export default class Account extends PageManager {
 
                     cb(result);
                 },
-                errorMessage: 'You must select an order.',
+                errorMessage: this.context.enterOrderNum,
             },
             {
                 selector: 'form[data-inbox-form] input[name="message_subject"]',
@@ -299,7 +306,7 @@ export default class Account extends PageManager {
 
                     cb(result);
                 },
-                errorMessage: 'You must enter a subject.',
+                errorMessage: this.context.enterSubject,
             },
             {
                 selector: 'form[data-inbox-form] textarea[name="message_content"]',
@@ -308,7 +315,7 @@ export default class Account extends PageManager {
 
                     cb(result);
                 },
-                errorMessage: 'You must enter a message.',
+                errorMessage: this.context.enterMessage,
             },
         ]);
 

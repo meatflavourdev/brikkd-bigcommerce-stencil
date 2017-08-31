@@ -1,8 +1,34 @@
 # Changelog
 
 ## Draft
+
+## 1.9.2 (2017-08-16)
+- Hide Info in footer if no address is provided in Store Profile. Hide Brands in footer if Merchant has no brands [#1053](https://github.com/bigcommerce/cornerstone/pull/1053)
+- Product illustrations in the storefront when the product catalog is empty [#1054](https://github.com/bigcommerce/cornerstone/pull/1054)
+- Add pointer-event for color and pattern swatches so title tags appear upon hover [#1055](https://github.com/bigcommerce/cornerstone/pull/1055)
+- Change the 403 page message to be more friendly [#1057](https://github.com/bigcommerce/cornerstone/pull/1057) & [#1059](https://github.com/bigcommerce/cornerstone/pull/1059)
+- Add bulk discount rates to product cards [#1058](https://github.com/bigcommerce/cornerstone/pull/1058)
+- Add higher z-index to display text over burst image [#1066](https://github.com/bigcommerce/cornerstone/pull/1066)
+- Do not show add to cart on disabled products, add pre-order button, update pre-order url to add product to cart & fix login for pricing on product cards. [#1063](https://github.com/bigcommerce/cornerstone/pull/1063)
+- Add auto height to the alternative navigation menu and its submenus. [#1056](https://github.com/bigcommerce/cornerstone/pull/1056)
+
+## 1.9.1 (2017-07-25)
+- Move some hard-coded validation messages to language file [#1040](https://github.com/bigcommerce/cornerstone/pull/1040)
+- Use different id for gift cert in cart page [#1044](https://github.com/bigcommerce/cornerstone/pull/1044)
+- Restore product image carousel [#1024](https://github.com/bigcommerce/cornerstone/pull/1024)
+- Reduce theme bundle size by using minified libraries where applicable [#1039](https://github.com/bigcommerce/cornerstone/pull/1039)
+- Replace JavaScript alert/confirmations with sweetalert2 library [#1035](https://github.com/bigcommerce/cornerstone/pull/1035)
+- Add global Sass variables to easily toggle exposure of Foundation styles from Citadel [#1047](https://github.com/bigcommerce/cornerstone/pull/1047)
+- Fix google plus social icon position [#1048](https://github.com/bigcommerce/cornerstone/pull/1048)
+- Use `page_type` instead of `template` for routing. Fix an issue with javascript not running in custom templates [#1050](https://github.com/bigcommerce/cornerstone/pull/1050)
+
+## 1.9.0 (2017-07-18)
 - Product Images were obscuring product details on smaller viewports [#1019](https://github.com/bigcommerce/cornerstone/pull/1019)
 - Add region tags to two template files to support payments team banner integration with content service [#1023](https://github.com/bigcommerce/cornerstone/pull/1023)
+- Add on/off toggle to the theme editor for the "Shop by Price" panel located on category pages [#1036](https://github.com/bigcommerce/cornerstone/pull/1036)
+- Fix H1-H6 font-sizing [#1034](https://github.com/bigcommerce/cornerstone/pull/1034)
+- Reduce theme bundle size by using specific minified libraries [#1037](https://github.com/bigcommerce/cornerstone/pull/1037)
+- Fix google plus spacing issue [#1041](https://github.com/bigcommerce/cornerstone/pull/1041)
 
 ## 1.8.2 (2017-06-23)
 - Swaps `writeReview` for `write_review` to fix email link issue [#1017](https://github.com/bigcommerce/cornerstone/pull/1017)

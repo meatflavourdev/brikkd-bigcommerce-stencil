@@ -64,6 +64,11 @@
         "type": "color",
         "label": "Loading overlay background color",
         "id": "loadingOverlay-backgroundColor"
+      },
+      {
+        "type": "color",
+        "label": "Alert popup box background color",
+        "id": "alert-backgroundColor"
       }
     ]
   },
@@ -954,6 +959,11 @@
         "type": "color",
         "label": "Arrow background color",
         "id": "carousel-arrow-bgColor"
+      },
+      {
+        "type": "color",
+        "label": "Arrow border color",
+        "id": "carousel-arrow-borderColor"
       }
     ]
   },
@@ -1496,6 +1506,12 @@
             "label": "20"
           }
         ]
+      },
+      {
+        "type": "checkbox",
+        "label": "Show &quot;Shop by Price&quot;",
+        "force_reload": true,
+        "id": "shop_by_price_visible"
       },
       {
         "type": "heading",

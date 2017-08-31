@@ -1,6 +1,6 @@
 {
   "name": "Cornerstone",
-  "version": "1.8.2",
+  "version": "1.9.2",
   "meta": {
     "price": 0,
     "documentation_url": "https://support.bigcommerce.com/articles/Public/Cornerstone-Theme-Manual",
@@ -56,6 +56,7 @@
     "productpage_related_products_count": 10,
     "productpage_similar_by_views_count": 10,
     "categorypage_products_per_page": 12,
+    "shop_by_price_visible": true,
     "brandpage_products_per_page": 12,
     "searchpage_products_per_page": 12,
     "show_product_quick_view": true,
@@ -158,6 +159,7 @@
     "carousel-dot-bgColor": "#ffffff",
     "carousel-arrow-color": "#989898",
     "carousel-arrow-bgColor": "#ffffff",
+    "carousel-arrow-borderColor": "#ffffff",
     "card-title-color": "#2d2d2d",
     "card-title-color-hover": "#a5a5a5",
     "card-figcaption-button-background": "#ffffff",
@@ -176,6 +178,7 @@
     "checkRadio-color": "#4f4f4f",
     "checkRadio-backgroundColor": "#ffffff",
     "checkRadio-borderColor": "#dfdfdf",
+    "alert-backgroundColor": "#ffffff",
     "alert-color": "#4f4f4f",
     "alert-color-alt": "#ffffff",
     "storeName-color": "#4f4f4f",
@@ -272,6 +275,7 @@
   ],
   "resources": {
     "cart": true,
+    "bulk_discount_rates": false,
     "shop_by_brand": {
       "limit": 10
     }
@@ -355,6 +359,7 @@
         "color-textLink--active": "#bfbfbf",
         "color-error": "#ea8d8d",
         "color-success": "#8adf8f",
+        "alert-backgroundColor": "#4c4c4c",
         "alert-color": "#585858",
         "alert-color-alt": "#ffffff",
         "storeName-color": "#ffffff",
@@ -413,8 +418,9 @@
         "carousel-dot-color": "#2d2d2d",
         "carousel-dot-color-active": "#f08383",
         "carousel-dot-bgColor": "#ffffff",
-        "carousel-arrow-color": "#999999",
-        "carousel-arrow-bgColor": "#ffffff",
+        "carousel-arrow-color": "#f08383",
+        "carousel-arrow-bgColor": "#585858",
+        "carousel-arrow-borderColor": "#585858",
         "icon-ratingEmpty": "#696969",
         "icon-ratingFull": "#7fc0c2",
         "icon-color": "#ffffff",
@@ -513,6 +519,7 @@
         "checkRadio-color": "#a18d7a",
         "checkRadio-backgroundColor": "#ffffff",
         "checkRadio-borderColor": "#d6cdc1",
+        "alert-backgroundColor": "#f2eee9",
         "navUser-color": "#5e5240",
         "navUser-color-hover": "#a18d7a",
         "navUser-dropdown-backgroundColor": "#f2eee9",
@@ -557,6 +564,7 @@
         "carousel-dot-bgColor": "#5c5245",
         "carousel-arrow-color": "#db8a40",
         "carousel-arrow-bgColor": "#ffffff",
+        "carousel-arrow-borderColor": "#ffffff",
         "icon-color": "#806f58",
         "icon-color-hover": "#b37134",
         "icon-ratingEmpty": "#dfddda",
