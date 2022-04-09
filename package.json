@@ -60,6 +60,6 @@
     "webpack": "^2.2.1"
   },
   "dependencies": {
-    "bulma": "^0.5.1"
+    "bulma": "^0.9.3"
   }
 }
